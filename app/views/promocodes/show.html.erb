@@ -1,0 +1,12 @@
+<p>
+  <strong>Title:</strong>
+  <%= @promocode.title %>
+</p>
+
+<p>
+  <strong>Hastag:</strong>
+  <%= @promocode.hastag %>
+</p>
+
+<%= link_to 'Edit', edit_promocode_path(@promocode) %> |
+<%= link_to 'Back', promocodes_path %>
