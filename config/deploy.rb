@@ -3,7 +3,7 @@ lock "~> 3.15.0"
 
 set :application, "oibt06"
 set :repo_url, "git@github.com:Andrew3268/oibt06.git"
-set :passenger_restart_with_touch
+set :passenger_restart_with_touch, true
 
 # Deploy to the user's home directory
 set :deploy_to, "/home/deploy/#{fetch :application}"
