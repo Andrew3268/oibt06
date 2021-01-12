@@ -25,9 +25,9 @@
   <tbody>
     <% @promocodes.each do |promocode| %>
       <tr>
-        <td><%= promocode.title %></td>
+        <td><%= promocode.code_title %></td>
         <% if current_user && current_user.admin %>
-          <td><%= promocode.hastag %></td>
+          <td><%= promocode.code_hashtag %></td>
           <td><%= link_to 'Show', promocode %></td>
           <td><%= link_to 'Edit', edit_promocode_path(promocode) %></td>
           <td><%= link_to 'Destroy', promocode, method: :delete, data: { confirm: 'Are you sure?' } %></td>

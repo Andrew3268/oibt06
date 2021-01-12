@@ -70,6 +70,6 @@ class PromocodesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def promocode_params
-      params.require(:promocode).permit(:title, :hastag)
+      params.require(:promocode).permit(:code_title, :code_hashtag)
     end
 end
